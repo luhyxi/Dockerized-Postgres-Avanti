@@ -14,7 +14,7 @@ services:
             - POSTGRES_DB=samples
         ports:
             - '39004:5432'
-    command: bash -c "chmod 777 /application -R"
+        command: bash -c "chmod 777 /application -R"
 
     webserver:
         image: 'nginx:alpine'
